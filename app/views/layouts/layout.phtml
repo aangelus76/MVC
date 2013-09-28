@@ -1,0 +1,53 @@
+<!DOCTYPE><html>
+<head>
+	<link href="lib/models/bootstrap/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+    <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Menu de test</li>
+              <li><a href="affiche">Affiche Index</a></li>
+              <li><a href="affiche-check">Affiche Check</a></li>
+              <li><a href="affiche_news">Affiche news</a></li>
+              <li><a href="test">Test</a></li>
+              <li><a href="user">User</a></li>
+              <li><a href="visiteur">Visiteur</a></li>
+              <?php
+		 function SetMenu(){
+		 $_MenuGet = null;
+		for ($i=0; $i<6; $i++) {
+			 $d=rand(1,30)%2; 
+			 $_MenuGet .= $d ? chr(rand(65,90)) : chr(rand(48,57)); 
+			/*echo  $d ? chr(rand(65,90)) : chr(rand(48,57)); 
+			echo $this->_MenuGet;*/
+		}
+		 return $_MenuGet;
+	}
+	$_MenuGets = SetMenu();
+	?>
+              <li><a href="Generate_<?php echo $_MenuGets; ?>"><?php echo $_MenuGets; ?></a></li>
+            </ul>
+          </div>
+    </div>
+    <div class="span10">
+	<?php echo $this->content(); ?><br>
+    <p><hr>-- D:\wamp\www\php-mvc-base-master\app\controllers<br>
+ <strong>	Creer un fichier php avec le nom de la page Ex : pour une page game -> GameController.php<br>
+	et a l'interieur la classe serra GameController.</strong><br></p>
+    <p><hr>-- D:\wamp\www\php-mvc-base-master\app\views\scripts\ +FileName " Test, Affiche "<br></p>
+   <p><hr>-- D:\wamp\www\php-mvc-base-master\config\routes.php<strong><em><pre>
+	'/' => 'index#index',
+	'/test' => 'test#index',
+	'/affiche' => 'affiche#index',
+	'/user/jojo' => 'user#index'</pre></em></strong></p>
+    </div>
+    </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+    	
+     <script src="lib/models/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
