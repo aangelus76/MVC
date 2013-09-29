@@ -1,7 +1,7 @@
 
 Information
 =====================
-**MVC personel adapter pour un service, peut ne pas convenir a vos projet, mais peut vous inspirer**
+**MVC personel adapter pour un service, peut ne pas convenir a vos projets, mais peut vous inspirer**
 
 
 
