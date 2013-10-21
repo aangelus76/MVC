@@ -13,18 +13,20 @@ Documents
 ---------
 
 **URL** 
-        '/' => 'index#index',
-	'/test' => 'test#index',
-	'/affiche-check' => 'affiche#check',
-	'/affiche_news' => 'affiche#news',
-	'/affiche' => 'affiche#index',
-	'/user' => 'user#index',
-	'/visiteur' => 'visiteur#index',
-	'/sociaux' => 'sociaux#index',
-	'/sociaux-check-id' => 'sociaux#check_id',
-	'/sociaux-check-list' => 'sociaux#check_list',
-	'/sociaux-check' => 'sociaux#check',
-	'/sociaux-check-id~456546' => 'sociaux#check_id'
+
+> - '/' => 'index#index',
+> -	'/test' => 'test#index',
+> -	'/affiche-check' => 'affiche#check',
+> -	'/affiche_news' => 'affiche#news',
+> -	'/affiche' => 'affiche#index',
+> -	'/user' => 'user#index',
+> -	'/visiteur' => 'visiteur#index',
+> -	'/sociaux' => 'sociaux#index',
+> -	'/sociaux-check-id' => 'sociaux#check_id',
+> -	'/sociaux-check-list' => 'sociaux#check_list',
+> -	'/sociaux-check' => 'sociaux#check',
+> -	'/sociaux-check-id~456546' => 'sociaux#check_id'
+
 > **NOTE:** Permetre des multi parametre dans les prochain correctif !
 
 
