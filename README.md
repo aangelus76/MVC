@@ -1,11 +1,10 @@
-
 Information
 =====================
 **MVC personel adapter pour un service, peut ne pas convenir a vos projets, mais peut vous inspirer**
 
 
 
-Ce projet MVC est adapter et conçue pour le service **RecruteAnim**[^describ1]. vous pourrez voire l'avancement de la réalisation, comment il es `Utiliter` sa <i class="icon-cog"></i>`Configuration` et ces possibilité.
+Ce projet MVC est adapter et conï¿½ue pour le service **RecruteAnim**[^describ1]. vous pourrez voire l'avancement de la rï¿½alisation, comment il es `Utiliter` sa <i class="icon-cog"></i>`Configuration` et ces possibilitï¿½.
 
 ----------
 
@@ -13,9 +12,31 @@ Ce projet MVC est adapter et conçue pour le service **RecruteAnim**[^describ1]. 
 Documents
 ---------
 
-**StackEdit** stores your documents in the browser local storage, which means all your documents are automatically saved locally and are accessible offline.
+**URL** 
+        '/' => 'index#index',
+	'/test' => 'test#index',
+	'/affiche-check' => 'affiche#check',
+	'/affiche_news' => 'affiche#news',
+	'/affiche' => 'affiche#index',
+	'/user' => 'user#index',
+	'/visiteur' => 'visiteur#index',
+	'/sociaux' => 'sociaux#index',
+	'/sociaux-check-id' => 'sociaux#check_id',
+	'/sociaux-check-list' => 'sociaux#check_list',
+	'/sociaux-check' => 'sociaux#check',
+	'/sociaux-check-id~456546' => 'sociaux#check_id'
+> **NOTE:** Permetre des multi parametre dans les prochain correctif !
 
-> **NOTE:** This also means that your documents are not shared between different browsers or computers and that clearing your browser's data may **delete all of them!**
+
+
+
+
+
+
+
+
+
+
 
 #### <i class="icon-file"></i> Create a document
 
@@ -218,7 +239,7 @@ $$
 > - about **Prettify** syntax highlighting [here][4].
 > - about **Highlight.js** syntax highlighting [here][5].
 
-  [^describ1]: RecruteAnim n'est pas un produit open source et ais soumis au copyright, seul le principe MVC peut etre utilisé.
+  [^describ1]: RecruteAnim n'est pas un produit open source et ais soumis au copyright, seul le principe MVC peut etre utilisï¿½.
 
 
   [1]: http://math.stackexchange.com/
