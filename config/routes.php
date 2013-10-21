@@ -10,12 +10,15 @@
  * '/calendar' => 'calendar#index'
  */
 $routes = array(
-'/' => 'index#index',
+    '/' => 'index#index',
 	'/test' => 'test#index',
 	'/affiche-check' => 'affiche#check',
 	'/affiche_news' => 'affiche#news',
 	'/affiche' => 'affiche#index',
 	'/user' => 'user#index',
 	'/visiteur' => 'visiteur#index',
-	'/out' => 'out#index'
+	'/sociaux' => 'sociaux#index',
+	'/sociaux-check-id' => 'sociaux#check_id',
+	'/sociaux-check-list' => 'sociaux#check_list',
+	'/sociaux-check' => 'sociaux#check'
 );

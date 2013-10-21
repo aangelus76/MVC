@@ -8,8 +8,8 @@ date_default_timezone_set('CET');
 define('WEB_ROOT', substr($_SERVER['SCRIPT_NAME'], 0, strpos($_SERVER['SCRIPT_NAME'], '/index.php')));
 // defindes the path to the files
 define('ROOT_PATH', realpath(dirname(__FILE__) . '../'));
-// defines the cms path
-define('CMS_PATH', ROOT_PATH . '/lib/extends/');
+// defines the MVC path
+define('MVC_PATH', ROOT_PATH . '/lib/app_extends/');
 
 // starts the session
 session_start();
@@ -29,8 +29,8 @@ function autoloader($className) {
 		}
 	}
 	else {
-		if (file_exists(CMS_PATH . $className . '.php')) {
-			require_once CMS_PATH . $className . '.php';
+		if (file_exists(MVC_PATH . $className . '.php')) {
+			require_once MVC_PATH . $className . '.php';
 		}
 		else if (file_exists(ROOT_PATH . '/lib/' . $className . '.php')) {
 			require_once ROOT_PATH . '/lib/' . $className . '.php';
