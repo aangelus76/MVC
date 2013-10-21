@@ -62,8 +62,14 @@ class Router
 	{
 		$uri = explode('?',$_SERVER['REQUEST_URI']);
 		$uri = $uri[0];
-		$uri = substr($uri, strlen(WEB_ROOT));
-		
+		// Recherche de parametre dans l'url , parametre trouver derriere ~
+		$ParamUri =  explode('~', $_SERVER['REQUEST_URI']);
+		if(isset($ParamUri[1]) && !empty($ParamUri[1])){
+		$uri = substr(str_replace('~'.$ParamUri[1],'',$uri), strlen(WEB_ROOT));
+		}
+		else{
+			$uri = substr($uri, strlen(WEB_ROOT));
+		}	
 		return $uri;
 	}
 	

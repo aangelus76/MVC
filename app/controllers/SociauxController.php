@@ -9,16 +9,18 @@ class SociauxController extends ApplicationController
 	
 	public function checkAction()
 	{
-		echo "Arrivée Out::Check";
+		//echo "Arrivée Out::Check";
 	}
 	
 	public function check_listAction()
 	{
-		echo "Arrivée Out::CheckList";
+		//echo "Arrivée Out::CheckList";
 	}
 	public function check_idAction()
 	{
-		echo "Arrivée Out::CheckId";
+		$ParamId = $_GET['param'];
+		$this->view->ID = $ParamId;
+		//echo "Arrivée Out::CheckId";
 		
 	}
 }
